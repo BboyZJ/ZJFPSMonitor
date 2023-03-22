@@ -7,6 +7,7 @@
 //
 
 #import "ZJViewController.h"
+#import <ZJFPSMonitor/ZJFPSMonitor.h>
 
 @interface ZJViewController ()
 
@@ -17,7 +18,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    [ZJFPSMonitor.shareInstance startMonitor];
+    ZJFPSMonitor.shareInstance.FPSMonitorBlock = ^(NSInteger fps) {
+        NSLog(@"%ld",fps);
+    };
+    
 }
 
 - (void)didReceiveMemoryWarning

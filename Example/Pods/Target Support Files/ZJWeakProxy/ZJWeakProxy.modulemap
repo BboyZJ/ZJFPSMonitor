@@ -1,0 +1,6 @@
+framework module ZJWeakProxy {
+  umbrella header "ZJWeakProxy-umbrella.h"
+
+  export *
+  module * { export * }
+}

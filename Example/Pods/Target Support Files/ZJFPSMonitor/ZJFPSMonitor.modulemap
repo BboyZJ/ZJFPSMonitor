@@ -1,0 +1,6 @@
+framework module ZJFPSMonitor {
+  umbrella header "ZJFPSMonitor-umbrella.h"
+
+  export *
+  module * { export * }
+}
