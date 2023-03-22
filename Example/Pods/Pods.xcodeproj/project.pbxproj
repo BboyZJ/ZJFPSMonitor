@@ -642,6 +642,38 @@
 			};
 			name = Release;
 		};
+		572CDB0EB058E0F1ECA8B7E4F0E251A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAA4D403599CF87E539FA19021572601 /* ZJFPSMonitor.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZJFPSMonitor/ZJFPSMonitor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZJFPSMonitor/ZJFPSMonitor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZJFPSMonitor/ZJFPSMonitor.modulemap";
+				PRODUCT_MODULE_NAME = ZJFPSMonitor;
+				PRODUCT_NAME = ZJFPSMonitor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		6B24A09CE2870771466E1B167814F1D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2F6863A14E2E50536C7B0C9198E17991 /* Pods-ZJFPSMonitor_Tests.release.xcconfig */;
@@ -737,36 +769,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		C22C3BAB43171E50D063D62ACFA4F741 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EEFAECCA7DE37D18DFA68D16521248E /* ZJFPSMonitor.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZJFPSMonitor/ZJFPSMonitor-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZJFPSMonitor/ZJFPSMonitor-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZJFPSMonitor/ZJFPSMonitor.modulemap";
-				PRODUCT_MODULE_NAME = ZJFPSMonitor;
-				PRODUCT_NAME = ZJFPSMonitor;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -900,10 +902,11 @@
 			};
 			name = Debug;
 		};
-		FBBAB9C8AB59D02634E6344B2F1A660B /* Release */ = {
+		ECC5F295D25DD058E02152A240302189 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAA4D403599CF87E539FA19021572601 /* ZJFPSMonitor.release.xcconfig */;
+			baseConfigurationReference = 8EEFAECCA7DE37D18DFA68D16521248E /* ZJFPSMonitor.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -915,7 +918,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ZJFPSMonitor/ZJFPSMonitor-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ZJFPSMonitor/ZJFPSMonitor-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ZJFPSMonitor/ZJFPSMonitor.modulemap";
 				PRODUCT_MODULE_NAME = ZJFPSMonitor;
@@ -925,11 +928,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -964,8 +966,8 @@
 		E1D4C44764782B1009A4B277C7B38A62 /* Build configuration list for PBXNativeTarget "ZJFPSMonitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C22C3BAB43171E50D063D62ACFA4F741 /* Debug */,
-				FBBAB9C8AB59D02634E6344B2F1A660B /* Release */,
+				ECC5F295D25DD058E02152A240302189 /* Debug */,
+				572CDB0EB058E0F1ECA8B7E4F0E251A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
